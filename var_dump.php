@@ -14,4 +14,6 @@ echo "<pre>";
 var_dump($boolean);
 echo "</pre>";
 
+print_r($associated_array);
+
 ?>
