@@ -15,6 +15,15 @@ $true = true;
 $false = false;
 
 #Array: list
+$week = array('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday',
+'Saturday', 'Sunday');
+$week2 = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday',
+'Saturday', 'Sunday'];
+$array = ['text', 1, true, 3.89, array('hello', 123)];
+$array2 = array('text', 1, true, 3.89, array('hello', 123));
+$week[7] = 'whatever';
+
+echo $week[7] . '<br/>';
 
 #Object: 
 
@@ -23,10 +32,10 @@ $false = false;
 #Null: variable with no value asigned;
 $null;
 
-echo "Hello $name";
-echo ' ';
-echo 'The integer number is ' . $number;
-echo ' ';
-echo gettype($name);
+echo "Hello $name" . '<br/>';
+
+echo 'The integer number is ' . $number . '<br/>';
+
+echo gettype($name) . '<br/>';
 
 ?>
