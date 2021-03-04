@@ -1,6 +1,6 @@
 <?php
 
-/*
+
  //print_r($_POST);
 
  //we check if we send data thru the method post
@@ -15,8 +15,8 @@
     $terms = $_POST['terms'];
    
     echo 'Hello ' . $name . '. Your are ' . $gender;
-*/
 
+/*
 //print_r($_GET);
 
     if (!$_GET) {
@@ -39,5 +39,5 @@
     echo $gender . '<br>';
     echo $year . '<br>';
     echo $terms . '<br>';
-
+*/
 ?>

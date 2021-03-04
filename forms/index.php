@@ -1,3 +1,10 @@
+<?php 
+if ($_POST) {
+    echo $_POST['name'];
+}
+   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +15,11 @@
 </head>
 <body>
 
-    <form action="get.php" method="get" name="" id="" class="">
+    <form 
+    action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" 
+    method="post" 
+    name="" id="" class=""
+    >
 
         <input type="text" placeholder="Name:" name="name" id="">
         <br>
