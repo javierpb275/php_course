@@ -15,6 +15,21 @@
         <input type="text" class="form-control" id="name" name="name" placeholder="Name:" value="">
         <input type="text" class="form-control" id="email" name="email" placeholder="Email:" value="">
         <textarea name="message" class="form-control" id="message" placeholder="Message:"></textarea>
+
+        <?php if (!empty($error)): ?>
+
+            <div class="alert error">
+                <?php echo $error; ?>
+            </div>
+           
+        <?php elseif ($sent): ?>
+
+            <div class="alert success">
+                <p>Sent Correctly</p>
+            </div>
+
+        <?php endif ?> 
+
         <input type="submit" name="submit" class="btn btn-primary" value="Send Email">
     </form>
 </div> 
