@@ -45,7 +45,9 @@ if (isset($_POST['submit'])) {
         $message_ready .= "Email: $email \n";
         $message_ready .= "Message: " . $message;
 
-        mail($send_to, $issue, $message_ready);
+        //mail($send_to, $issue, $message_ready);
+
+        $sent = 'true';
     }
 
 

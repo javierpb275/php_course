@@ -12,9 +12,17 @@
 <body>
 <div class="wrap">
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
-        <input type="text" class="form-control" id="name" name="name" placeholder="Name:" value="">
-        <input type="text" class="form-control" id="email" name="email" placeholder="Email:" value="">
-        <textarea name="message" class="form-control" id="message" placeholder="Message:"></textarea>
+        <input type="text" 
+        class="form-control" 
+        id="name" name="name" 
+        placeholder="Name:" 
+        value="<?php if(!$sent && isset($name)) echo $name ?>">
+        <input type="text" 
+        class="form-control" 
+        id="email" name="email" 
+        placeholder="Email:" 
+        value="<?php if(!$sent && isset($email)) echo $email ?>">
+        <textarea name="message" class="form-control" id="message" placeholder="Message:"><?php if(!$sent && isset($message)) echo $message ?></textarea>
 
         <?php if (!empty($error)): ?>
 
