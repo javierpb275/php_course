@@ -9,12 +9,11 @@
 //PRIVATE
 //You can only access from inside of the class where they were created.
 
-//VIDEO 56. MINUTE 5:30.
 
 class User {
 
-    public $name;
-    public $email;
+    private $name;
+    protected $email;
 
     function __construct($name, $email) {
         $this->name = $name;
@@ -22,14 +21,28 @@ class User {
     }
 
     public function showInfo() {
+        return $this->name;
+    }
+
+}
+
+class Member extends User {
+
+    public function showEmail() {
         return $this->email;
     }
 
 }
 
-$user1 = new User('Pepe', 'pepe@gmail.com');
+$member1 = new Member('Pepe', 'pepe@gmail.com');
 
-echo $user1->showInfo() . '<br>';
+$user1 = new User('Charles', 'charles@gmail.com');
+
+echo $member1->showEmail() . '<br>';
+
+echo $user1->showInfo(). '<br>';
+
+
 
 
 ?>
