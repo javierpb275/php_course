@@ -37,12 +37,8 @@ if (!$articles) {
 $totalArticles = $connection->query('SELECT FOUND_ROWS() AS total');
 $totalArticles = $totalArticles->fetch()['total']; 
 
-
-
 //ceil(): round a number
 $numberPages = ceil($totalArticles / $postPerPage);
-
-echo $numberPages;
 
 require 'index.view.php';
 
