@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: #FCFFF7;
+    color: #0A3333;
+    font-family: 'Playfair Display', serif;
+  }
+  .container{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+  }
+  h1{
+    margin: 45px 0;
+    text-align: center;
+    color: #1B998B;
+  }
+  .container .articles{
+    margin-bottom: 20px;
+  }
+  .container .articles ul{
+    list-style: none;
+  }
+  .container .articles ul li{
+    padding: 15px 10px;
+    border-bottom: 1px solid #1B998B;
+  }
+  .pagination ul{
+    list-style: none;
+  }
+  .pagination ul li{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .pagination ul .active a{
+    background: #FFE900;
+    color: #046865;
+  }
+  .pagination ul .disabled{
+    background: #E1FFAD;
+    cursor: not-allowed;
+    display: inline-block;
+    padding: 15px 25px;
+    color: #0A3333;
+    text-decoration: none;
+  }
+  .pagination ul li a{
+    display: inline-block;
+    padding: 15px 25px;
+    background: #046865;
+    color: #FCFFF7;
+    text-decoration: none;
+  }
+  .pagination ul li a:hover{
+    text-decoration: none;
+    background: #E53D00;
+    color: #FCFFF7;
+  }
