@@ -32,6 +32,15 @@
 			<i class="icon left fa fa-lock"></i><input class="password_btn" type="password" name="password2" placeholder="Repeat password">
 			<i class="submit-btn fa fa-arrow-right" onclick="login.submit()"></i>
 		</div>
+
+<!-- Check if the variable error is set, in that case, we show the error -->
+			<?php if(!empty($error)): ?>
+				<div class="error">
+					<ul>
+						<?php echo $error; ?>
+					</ul>
+				</div>
+			<?php endif; ?>
     
     </form>
 
