@@ -1,6 +1,10 @@
 <?php
 
+//require 'functions.php';
+
 session_start();
+
+//checkSession();
 
 if (isset($_SESSION['user'])) {
     header('Location: index.php');
